@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f7f9f8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#151a1b" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:," />
+  <title>TBD Under Construction</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap');
+
+    :root {
+      color-scheme: light dark;
+      --bg: #fbf7eb;
+      --surface: #fffdf7;
+      --ink: #30312e;
+      --muted: #69685f;
+      --line: #e3dcc8;
+      --accent: #dfa51b;
+      --accent-soft: #fff0b8;
+      --accent-ink: #4b3600;
+      --teal: #c76b1b;
+      --shadow: 0 20px 50px rgba(77, 62, 29, .11);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1f1f1c;
+        --surface: #292823;
+        --ink: #f7f0df;
+        --muted: #c6bda9;
+        --line: #4a4538;
+        --accent: #f2bb36;
+        --accent-soft: #493a15;
+        --accent-ink: #ffe7a0;
+        --teal: #f09243;
+        --shadow: 0 22px 55px rgba(0, 0, 0, .28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      background:
+        linear-gradient(90deg, transparent 0 49.7%, color-mix(in srgb, var(--line) 38%, transparent) 49.7% 50.3%, transparent 50.3%) center / min(92vw, 1240px) 100% no-repeat,
+        var(--bg);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .site-nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 20px 0 18px;
+      border-bottom: 1px solid var(--line);
+      overflow: visible;
+    }
+
+    .site-nav::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 4px;
+      background: repeating-linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--accent) 55%, transparent) 0 9px,
+        color-mix(in srgb, var(--ink) 14%, transparent) 9px 18px
+      );
+      opacity: .72;
+      pointer-events: none;
+    }
+
+    .site-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: .92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 160ms ease, color 160ms ease;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus-visible {
+      background: var(--surface);
+      color: var(--ink);
+      outline: none;
+    }
+
+    .site-nav a[aria-current="page"] {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .site-nav a.pending::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      margin-left: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(340px, .98fr);
+      align-items: center;
+      gap: clamp(44px, 8vw, 100px);
+      padding: clamp(56px, 10vh, 112px) 0;
+    }
+
+    .copy { max-width: 600px; }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 24px;
+      padding: 8px 12px;
+      border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--line));
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-ink);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .status i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 650px;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(3rem, 4.7vw, 4.25rem);
+      font-weight: 600;
+      line-height: .88;
+      letter-spacing: -.055em;
+      text-wrap: balance;
+    }
+
+    h1 span { color: var(--teal); }
+
+    .lede {
+      max-width: 520px;
+      margin: 30px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 2vw, 1.2rem);
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 19px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: 0 7px 20px rgba(36, 63, 63, .06);
+      font-size: .92rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      border-color: var(--teal);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .button svg { width: 16px; height: 16px; }
+
+    .scene {
+      position: relative;
+      min-height: 430px;
+      display: grid;
+      place-items: center;
+      border-radius: 32px 10px 32px 10px;
+      overflow: hidden;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--surface);
+      background-size: 34px 34px;
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 20%, transparent), color-mix(in srgb, var(--accent-soft) 76%, transparent));
+      z-index: -1;
+    }
+
+    .illustration {
+      width: min(86%, 430px);
+      height: auto;
+      filter: drop-shadow(0 18px 20px rgba(29, 51, 51, .12));
+    }
+
+    .lamp { transform-origin: center; animation: pulse 2.4s ease-in-out infinite; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 0 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    footer strong { color: var(--ink); font-weight: 600; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: .45; }
+      50% { opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    @media (max-width: 780px) {
+      .page { width: min(100% - 28px, 620px); }
+      .site-nav {
+        display: grid;
+        grid-template-columns: auto auto minmax(0, 1fr);
+        gap: 4px;
+        padding-top: 14px;
+      }
+      .site-nav a {
+        min-width: 0;
+        min-height: 40px;
+        padding: 0 7px;
+        font-size: .68rem;
+        white-space: nowrap;
+      }
+      .site-nav a[aria-current="page"] { justify-self: end; }
+      .site-nav a.pending::after { display: none; }
+      main {
+        grid-template-columns: 1fr;
+        gap: 38px;
+        padding: 52px 0 40px;
+      }
+      h1 { font-size: clamp(2.6rem, 11.5vw, 3.15rem); }
+      .lede { margin-top: 22px; }
+      .scene { min-height: 300px; border-radius: 24px 8px 24px 8px; }
+      footer { flex-direction: column; gap: 6px; }
+    }
+
+    @media (max-width: 390px) {
+      .site-nav a { padding: 0 7px; font-size: .72rem; }
+      .actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="site-nav" aria-label="Sites">
+      <a href="index.html">Data News</a>
+      <a href="real-estate.html">Austin area -Real Estate</a>
+      <a href="under-construction.html" aria-current="page">TBD Under Construction</a>
+    </nav>
+
+    <main>
+      <section class="copy" aria-labelledby="page-title">
+        <p class="status"><i aria-hidden="true"></i> Work in progress</p>
+        <h1 id="page-title">TBD Under Construction</h1>
+        <p class="lede">Something useful is taking shape here. We’re putting the details together with care—check back soon for the finished site.</p>
+        <div class="actions">
+          <a class="button" href="index.html">
+            Visit Data News
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="button" href="#" aria-label="Austin Area, link coming soon">Austin Area — coming soon</a>
+        </div>
+      </section>
+
+      <div class="scene" role="img" aria-label="A cheerful illustrated construction barrier and safety cone">
+        <svg class="illustration" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="260" cy="359" rx="196" ry="26" fill="#183032" opacity=".10"/>
+          <path d="M123 336h62l21-128h-42z" fill="#183032"/>
+          <path d="M335 336h62l-41-128h-42z" fill="#183032"/>
+          <rect x="77" y="155" width="366" height="98" rx="14" fill="#f2b43d" stroke="#183032" stroke-width="8"/>
+          <path d="M105 159h62l-72 90H77v-47zm119 0h67l-73 90h-66zm125 0h66l-72 90h-67z" fill="#fff7de"/>
+          <rect x="109" y="245" width="28" height="93" rx="8" fill="#183032"/>
+          <rect x="383" y="245" width="28" height="93" rx="8" fill="#183032"/>
+          <rect x="84" y="329" width="78" height="20" rx="10" fill="#183032"/>
+          <rect x="358" y="329" width="78" height="20" rx="10" fill="#183032"/>
+          <path d="M265 317h81l-24-109h-33z" fill="#ef8b32" stroke="#183032" stroke-width="7" stroke-linejoin="round"/>
+          <path d="M279 259h57l9 39h-75z" fill="#fff7de"/>
+          <rect x="255" y="310" width="101" height="30" rx="10" fill="#183032"/>
+          <g class="lamp">
+            <path d="M246 132c0-18 14-32 32-32s32 14 32 32" fill="#f2b43d" stroke="#183032" stroke-width="8"/>
+            <path d="M278 80V52M230 98l-20-20m116 20 20-20" stroke="#e7a528" stroke-width="8" stroke-linecap="round"/>
+          </g>
+          <rect x="240" y="130" width="76" height="25" rx="8" fill="#183032"/>
+        </svg>
+      </div>
+    </main>
+
+    <footer>
+      <span><strong>Built thoughtfully.</strong> Opening soon.</span>
+      <span>Thanks for stopping by.</span>
+    </footer>
+  </div>
+</body>
+</html>
