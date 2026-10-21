@@ -379,7 +379,7 @@
     .earnings-section .earnings-moves > .ibkr-market-play .bot-pick-stat { padding: 5px; }
     .earnings-section .earnings-moves > .ibkr-market-play .bot-pick-stat span,
     .earnings-section .earnings-moves > .ibkr-market-play .bot-pick-copy,
-    .earnings-section .earnings-moves > .ibkr-market-play .orlando-pick-fact,
+    .earnings-section .earnings-moves > .ibkr-market-play .user-pick-fact,
     .earnings-section .earnings-moves > .ibkr-market-play .bot-pick-risk { font-size: .52rem; }
     .earnings-section .earnings-moves > .ibkr-market-play .bot-pick-stat strong { font-size: .66rem; }
     .earnings-section .earnings-moves > .ibkr-market-play .comparison-row { gap: 3px 8px; }
@@ -491,15 +491,15 @@
     .pick-record-rule { margin: 11px 0 0; color: var(--muted); font-size: .72rem; line-height: 1.4; }
     .pick-record-card .pick-pending { color: var(--gold); font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
     .bot-pick-wide .weekly-pick { margin: 0; border: 1px solid #4a5149; border-top: 0; }
-    .orlando-weekly-verdict { margin-top: 12px; border-top-color: var(--gold); }
-    .orlando-weekly-verdict .section-kicker { color: var(--gold); }
-    .orlando-pick-layout { display: grid; grid-template-columns: minmax(310px, .95fr) minmax(0, 1.05fr); gap: 14px; align-items: start; margin-top: 7px; }
-    .orlando-pick-fact { margin: 0; color: var(--muted); font-size: .68rem; line-height: 1.42; }
-    .orlando-pick-fact strong { color: var(--ink); }
-    .weekly-pick .orlando-pick-fact { color: #d3d7d0; }
-    .weekly-pick .orlando-pick-fact strong { color: #f0eee7; }
+    .user-weekly-verdict { margin-top: 12px; border-top-color: var(--gold); }
+    .user-weekly-verdict .section-kicker { color: var(--gold); }
+    .user-pick-layout { display: grid; grid-template-columns: minmax(310px, .95fr) minmax(0, 1.05fr); gap: 14px; align-items: start; margin-top: 7px; }
+    .user-pick-fact { margin: 0; color: var(--muted); font-size: .68rem; line-height: 1.42; }
+    .user-pick-fact strong { color: var(--ink); }
+    .weekly-pick .user-pick-fact { color: #d3d7d0; }
+    .weekly-pick .user-pick-fact strong { color: #f0eee7; }
     @media (max-width: 700px) {
-      .orlando-pick-layout { grid-template-columns: 1fr; }
+      .user-pick-layout { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
       .pick-record-grid { grid-template-columns: 1fr; }
@@ -620,8 +620,8 @@
 
     <nav class="site-tabs" aria-label="Websites">
       <a class="site-tab" href="#" aria-current="page">Data News</a>
-      <a class="site-tab" href="https://muse.ai/s/kyle-housing-dashboard-xpxi5xwxlxrxjgf5f">Austin area -Real Estate</a>
-      <a class="site-tab" href="https://muse.ai/s/underconstruction-gq5xwxlxrnxpxzxcxs">TBD Under Construction</a>
+      <a class="site-tab" href="real-estate.html">Austin area -Real Estate</a>
+      <a class="site-tab" href="under-construction.html">TBD Under Construction</a>
     </nav>
 
     <section class="hero" aria-labelledby="edition-title">
@@ -674,9 +674,11 @@
     <section class="section" aria-labelledby="headlines-title">
       <div class="section-title">
         <div><div class="section-kicker">Breaking frame</div><h2 id="headlines-title">Latest major headlines</h2></div>
-        <div class="section-meta">Updated · Oct 21, ~5:40 AM CT</div>
+        <div class="section-meta">Updated · Oct 21, ~9:30 AM CT</div>
       </div>
       <div class="headline-box">
+        <div class="headline-row"><time datetime="2026-10-21T09:30:00-05:00">Wed Oct 21 · 9:30 AM CT</time><div class="headline-copy"><span class="headline-title">Cybersecurity and cloud names rally 5–7% intraday in a sector-wide move</span><div class="headline-byline">Oct 21, 2026 · Finnhub live quotes</div><p>Datadog (DDOG) +6.62% at $273.40 (Finnhub live $273.80, +6.77%), Cloudflare (NET) +5.41% at $307.46, Okta (OKTA) +5.44% at $204.57 and Zscaler (ZS) +6.10% at $227.59 — a genuine sector-wide rally, not a feed artifact. Also on the move: Direxion Daily FTSE China Bull 3X (YINN) −5.73% at $22.27.</p></div><span class="source-tag">AI/tech · High</span></div>
+        <div class="headline-row"><time datetime="2026-10-21T08:22:00-05:00">Wed Oct 21 · 8:22 AM CT</time><div class="headline-copy"><span class="headline-title">Lithia Motors (LAD) +7.50% at $322.00 on Q3 beat before the open</span><div class="headline-byline">Oct 21, 2026 · Q3 earnings</div><p>Adjusted EPS of $10.34 beat the ~$9.7–9.87 consensus, with record Q3 revenue of $9.9B and a 7% quarterly dividend raise. The earnings-day 7% bar applies (market cap $6.49B).</p></div><span class="source-tag">Earnings · High</span></div>
         <div class="headline-row"><time datetime="2026-10-21T05:40:00-05:00">Wed Oct 21 · ~5:40 AM CT</time><div class="headline-copy"><span class="headline-title">FT: Trump halted Netanyahu's planned October offensive against Iran; Netanyahu now pushing to resume large-scale strikes</span><div class="headline-byline">Oct 21, 2026 · <a href="https://www.azernews.az/region/265919.html" target="_blank" rel="noreferrer">FT via Azernews ↗</a> · <a href="https://unitedwithisrael.org/trump-blocked-major-israeli-attack-on-iran-earlier-this-month-report/" target="_blank" rel="noreferrer">United With Israel ↗</a> · <a href="https://scoopfeeds.com/article/8776ab9d-77a5-58b1-b27e-dbf49a649d43" target="_blank" rel="noreferrer">ScoopFeeds ↗</a> · <a href="https://ianslive.in/israels-netanyahu-says-discussed-overthrowing-irans-government-with-trump--20261020222147" target="_blank" rel="noreferrer">IANS ↗</a></div><p>The Financial Times reports (citing three people familiar) that Netanyahu instructed the IDF to prepare a multi-day bombing campaign against Iran over the weekend of Oct 10 — nuclear, regime, and civilian-infrastructure/energy targets, larger in scale than February's Operation Roaring Lion — but Trump withheld approval ahead of the Nov 3 midterms. One source: 'Either there will be a deal or there will be an attack'; renewed strikes in the coming weeks 'not an unreasonable scenario.' Separately, Netanyahu said publicly Tuesday that regime overthrow is the goal — 'We must complete the overthrow of the Iranian regime. That is the main thing. I have discussed this with President Trump more than once' — after Defense Secretary Hegseth's unannounced visit to Israel on Monday. Sources: Financial Times via Azernews, United With Israel, ScoopFeeds, IANS.</p></div><span class="source-tag">Geopolitics · High</span></div>
         <div class="headline-row"><time datetime="2026-10-21T05:40:00-05:00">Wed Oct 21 · ~5:40 AM CT</time><div class="headline-copy"><span class="headline-title">Bloomberg: Iran intensifying strikes on ships in/around the Strait of Hormuz</span><div class="headline-byline">Oct 21, 2026 · <a href="https://www.rigzone.com/news/wire/iran_intensifies_strikes_on_ships-21-oct-2026-184891-article/" target="_blank" rel="noreferrer">Bloomberg via Rigzone ↗</a> · <a href="https://gcaptain.com/iran-strikes-more-ship-engine-rooms-in-ramp-up-of-hormuz-attacks/" target="_blank" rel="noreferrer">gCaptain ↗</a></div><p>Attacks are striking more ships and causing more severe damage than earlier in the conflict; at least 23 incidents logged in the first two weeks of October, with at least five reporting impacts to their engine rooms — engine-room hits can disable vessels for months and take ships out of service (Intertanko: 'an increase in the frequency of attacks, and therefore, more damage in engine rooms and disabling fire'; tanker-war parallels). Kpler: 7-day average Middle East oil exports fractionally above prewar levels, but the strikes threaten the shrinking pool of available tankers. Brent ~$110.39 (+1.47%), WTI ~$99.14 (+1.35%) Wednesday morning. Sources: Bloomberg via Rigzone, gCaptain.</p></div><span class="source-tag">Energy · High</span></div>
         <div class="headline-row"><time datetime="2026-10-21T05:40:00-05:00">Wed Oct 21 · ~5:40 AM CT</time><div class="headline-copy"><span class="headline-title">Intuitive Surgical (ISRG) −7.97% premarket Wednesday after Q3</span><div class="headline-byline">Oct 21, 2026 · <a href="https://www.barrons.com/articles/intuitive-surgical-earnings-stock-price-ef99111b" target="_blank" rel="noreferrer">Barron's ↗</a> · <a href="https://www.investors.com/news/technology/intuitive-surgical-stock-intuitive-surgical-earnings-13-2026/" target="_blank" rel="noreferrer">Investor's Business Daily ↗</a></div><p>Adj EPS $3.00 beat ($2.65 est) and revenue $3.05B (+22% YoY) beat ($2.91B est) — but the company disclosed a $450M antitrust settlement (−99¢/share to GAAP EPS) and narrowed the 2026 da Vinci procedure-growth outlook to 14–15% (from 13.5–15.5%), landing near the midpoint; U.S. da Vinci procedures grew only 10% ('lowest we've seen since COVID'). The premarket drop erased ~$11B of market value. Sources: Barron's, Investor's Business Daily.</p></div><span class="source-tag">Earnings · High</span></div>
@@ -697,7 +699,7 @@
         <div class="headline-row"><time datetime="2026-10-19T02:00:00-05:00">Mon Oct 19 · ~2:00 AM CT</time><div class="headline-copy"><span class="headline-title">China Q3 GDP +4.5% y/y beats forecast (vs 4.4% expected, 4.3% in Q2); retail sales +1.1% the real beat (vs 0.6% expected, fastest since March)</span><div class="headline-byline">Oct 19, 2026 · Reuters</div><p>Industrial output +5.5% (in line); fixed-asset investment −7.2% YTD; property investment −20.6%. The beat eases pressure for more stimulus. The yuan firmed to 6.6828, its strongest since July 2022. China’s LPR decision is due Tuesday. Source: Reuters.</p></div><span class="source-tag">Economy · High</span></div>
         <div class="headline-row"><time datetime="2026-10-19T02:00:00-05:00">Mon Oct 19 · ~2:00 AM CT</time><div class="headline-copy"><span class="headline-title">Hormuz: oil tanker caught fire and exploded after striking a naval mine; UKMTO reporting more shipping attacks daily; tanker rates at record highs</span><div class="headline-byline">Oct 19, 2026 · Reuters</div><p>Iran reported the mine strike in the southern Strait of Hormuz. Record tanker rates and insurance charges add to the physical-delivery cost of every barrel. Brent still fell ~1.6–1.7% to ~$108 Monday on the ambiguity around Trump’s Russia sanctions waiver — Rubio said Saturday Trump will take up to 60 days to assess — so markets have not (yet) repriced the new incident higher. Source: Reuters.</p></div><span class="source-tag">Energy · High</span></div>
       </div>
-      <p class="note">Updated Wednesday at ~5:40 AM CT. Latest headlines cover Oct. 19–21; Friday closing values are fixed and do not update after publication.</p>
+      <p class="note">Updated Wednesday at ~9:30 AM CT. Latest headlines cover Oct. 19–21; Friday closing values are fixed and do not update after publication.</p>
     </section>
 
     <section class="section" aria-labelledby="market-title">
@@ -828,7 +830,7 @@
     </section>
     <div class="bot-pick-wide">
       <div class="earnings-section">
-        <!-- LOCKED FOUR-PLAY ORDER: 1 Market pricing · 2 Bot's pick · 3 Orlando's pick · 4 Earnings run-up. -->
+        <!-- LOCKED FOUR-PLAY ORDER: 1 Market pricing · 2 Bot's pick · 3 User's pick · 4 Earnings run-up. -->
         <div class="locked-play-slots" data-layout-lock="four-play-order-v1">
           <article class="bot-weekly-verdict slot-bot-play" data-play-slot="1" aria-labelledby="spy-market-play-title">
           <div class="bot-pick-head">
@@ -837,7 +839,7 @@
               <h3 id="spy-market-play-title">SPY Oct. 23 $755/$760/$775/$780 iron condor</h3>
               <div class="bot-pick-bias">What the market is pricing · defined-risk range trade</div>
             </div>
-            <div class="bot-pick-quote">SPY $765.61 at re-price<br>Expected move ±1.45% · ATM straddle ~$11.12<br>Oct 23 expiry · DTE 3</div>
+            <div class="bot-pick-quote">SPY $770.21 at re-price<br>Expected move ±1.45% · ATM straddle ~$11.12<br>Oct 23 expiry · DTE 2</div>
           </div>
           <div class="bot-pick-layout">
             <div class="bot-pick-details">
@@ -848,27 +850,27 @@
                 <div class="bot-pick-leg"><span>Buy Oct 23 $780 call</span><b>Long call</b></div>
               </div>
               <div class="bot-pick-stats">
-                <div class="bot-pick-stat"><span>Net credit / max profit</span><strong class="profit">$1.61 · $161</strong></div>
-                <div class="bot-pick-stat"><span>Max loss</span><strong class="loss">$3.39 · $339</strong></div>
-                <div class="bot-pick-stat"><span>Lower breakeven</span><strong>$758.39</strong></div>
-                <div class="bot-pick-stat"><span>Upper breakeven</span><strong>$776.61</strong></div>
+                <div class="bot-pick-stat"><span>Net credit / max profit</span><strong class="profit">$1.55 · $155</strong></div>
+                <div class="bot-pick-stat"><span>Max loss</span><strong class="loss">$3.45 · $345</strong></div>
+                <div class="bot-pick-stat"><span>Lower breakeven</span><strong>$758.45</strong></div>
+                <div class="bot-pick-stat"><span>Upper breakeven</span><strong>$776.55</strong></div>
               </div>
               <div class="comparison-row">
-                <p class="price-comparison"><strong>vs yesterday (Mon Oct 19):</strong> stock −0.2% · credit −12.0% · max loss +6.9% · breakevens $758.17/$776.83 → $758.39/$776.61</p>
-                <p class="better-day-note">Better day to make this pick: yesterday — the credit fell 12.0% since yesterday ($183 → $161), so yesterday was the better day to sell this condor.</p>
-                <p class="probability-note">Implied chance of profit: ~66% (from option prices)</p>
+                <p class="price-comparison"><strong>vs yesterday (Tue Oct 20):</strong> stock +0.6% · credit −3.7% · max loss +1.8% · breakevens $758.39/$776.61 → $758.45/$776.55 · hit chance 66% → 67%</p>
+                <p class="better-day-note">Better day to make this pick: yesterday — the credit fell 3.7% since yesterday ($161 → $155), so yesterday was the better day to sell this condor.</p>
+                <p class="probability-note">Implied chance of profit: ~67% (from option prices)</p>
               </div>
             </div>
             <div class="bot-pick-copy-wrap">
               <p class="bot-pick-copy"><strong>Expected move:</strong> the Oct. 23 at-the-money straddle is about $11.12, implying a ±1.45% move into the expiry. A quiet weekly expiry with no major scheduled catalyst — the structure simply sells the market's own ±1.45% expected move.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Position:</strong> a bet that SPY stays between $758.39 and $776.61 through the Oct. 23 expiry — profit if the market's weekly move lands within its expected ±1.45% range.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Defined risk:</strong> maximum loss is capped at $339 per contract no matter how far SPY moves past the wings. Maximum profit is the $161 credit.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Position:</strong> a bet that SPY stays between $758.45 and $776.55 through the Oct. 23 expiry — profit if the market's weekly move lands within its expected ±1.45% range.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Defined risk:</strong> maximum loss is capped at $345 per contract no matter how far SPY moves past the wings. Maximum profit is the $155 credit.</p>
             </div>
             <div class="bot-pick-payoff broker-payoff">
               <div class="bot-pick-payoff-head"><span>Profit / loss at expiry</span><span>1 condor · USD</span></div>
               <svg class="payoff" viewBox="0 0 360 220" role="img" aria-labelledby="spy-payoff-title spy-payoff-desc">
                 <title id="spy-payoff-title">SPY iron condor profit and loss at expiry</title>
-                <desc id="spy-payoff-desc">At or below 755 dollars and at or above 780 dollars, maximum loss is 339 dollars. Profit rises between 755 and 760 dollars, stays at the maximum 161 dollars from 760 through 775 dollars, then falls between 775 and 780 dollars. Breakevens are 758 dollars and 39 cents and 776 dollars and 61 cents. A dashed line marks the current 765 dollar and 61 cent share price.</desc>
+                <desc id="spy-payoff-desc">At or below 755 dollars and at or above 780 dollars, maximum loss is 345 dollars. Profit rises between 755 and 760 dollars, stays at the maximum 155 dollars from 760 through 775 dollars, then falls between 775 and 780 dollars. Breakevens are 758 dollars and 45 cents and 776 dollars and 55 cents. A dashed line marks the current 770 dollar and 21 cent share price.</desc>
                 <rect class="plot-bg" x="42" y="20" width="300" height="170"></rect>
                 <g aria-hidden="true">
                   <line class="grid-line" x1="42" y1="20" x2="342" y2="20"></line>
@@ -878,46 +880,46 @@
                   <line class="grid-line" x1="154.5" y1="20" x2="154.5" y2="190"></line>
                   <line class="grid-line" x1="267" y1="20" x2="267" y2="190"></line>
                   <line class="grid-line" x1="304.5" y1="20" x2="304.5" y2="190"></line>
-                  <polygon class="loss-fill" points="42,105 42,187.33 117,187.33 142.43,105"></polygon>
-                  <polygon class="profit-fill" points="142.43,105 154.5,50.26 267,50.26 279.08,105"></polygon>
-                  <polygon class="loss-fill" points="279.08,105 304.5,187.33 342,187.33 342,105"></polygon>
+                  <polygon class="loss-fill" points="42,105 42,188.79 117,188.79 142.88,105"></polygon>
+                  <polygon class="profit-fill" points="142.88,105 154.5,52.3 267,52.3 278.63,105"></polygon>
+                  <polygon class="loss-fill" points="278.63,105 304.5,188.79 342,188.79 342,105"></polygon>
                   <line class="axis-line" x1="42" y1="20" x2="42" y2="190"></line>
                   <line class="axis-line" x1="42" y1="190" x2="342" y2="190"></line>
                   <line class="zero" x1="42" y1="105" x2="342" y2="105"></line>
-                  <line class="current" x1="196.58" y1="20" x2="196.58" y2="190"></line>
-                  <line class="loss-line" x1="42" y1="187.33" x2="117" y2="187.33"></line>
-                  <line class="slope-line" x1="117" y1="187.33" x2="154.5" y2="50.26"></line>
-                  <line class="gain-line" x1="154.5" y1="50.26" x2="267" y2="50.26"></line>
-                  <line class="slope-line" x1="267" y1="50.26" x2="304.5" y2="187.33"></line>
-                  <line class="loss-line" x1="304.5" y1="187.33" x2="342" y2="187.33"></line>
-                  <circle class="breakeven-dot" cx="142.43" cy="105" r="4"></circle>
-                  <circle class="breakeven-dot" cx="279.08" cy="105" r="4"></circle>
+                  <line class="current" x1="231.08" y1="20" x2="231.08" y2="190"></line>
+                  <line class="loss-line" x1="42" y1="188.79" x2="117" y2="188.79"></line>
+                  <line class="slope-line" x1="117" y1="188.79" x2="154.5" y2="52.3"></line>
+                  <line class="gain-line" x1="154.5" y1="52.3" x2="267" y2="52.3"></line>
+                  <line class="slope-line" x1="267" y1="52.3" x2="304.5" y2="188.79"></line>
+                  <line class="loss-line" x1="304.5" y1="188.79" x2="342" y2="188.79"></line>
+                  <circle class="breakeven-dot" cx="142.88" cy="105" r="4"></circle>
+                  <circle class="breakeven-dot" cx="278.63" cy="105" r="4"></circle>
                 </g>
                 <g class="tick-label" aria-hidden="true">
                   <text x="36" y="23" text-anchor="end">+$250</text><text x="36" y="108.5" text-anchor="end">$0</text><text x="36" y="193" text-anchor="end">−$350</text>
                   <text x="42" y="204" text-anchor="middle">$745</text><text x="117" y="204" text-anchor="middle">$755</text><text x="154.5" y="204" text-anchor="middle">$760</text><text x="267" y="204" text-anchor="middle">$775</text><text x="304.5" y="204" text-anchor="middle">$780</text><text x="342" y="204" text-anchor="middle">$785</text>
                 </g>
-                <text class="profit-label" x="211" y="44" text-anchor="middle">Max profit +$161</text>
-                <text class="loss-label" x="48" y="181">Max loss −$339</text>
-                <text class="loss-label" x="336" y="181" text-anchor="end">Max loss −$339</text>
-                <text class="marker-label" x="137" y="98" text-anchor="end">BE $758.39</text>
-                <text class="marker-label" x="284" y="98">BE $776.61</text>
-                <text class="marker-label" x="201" y="58">Now $765.61</text>
+                <text class="profit-label" x="211" y="44" text-anchor="middle">Max profit +$155</text>
+                <text class="loss-label" x="48" y="182">Max loss −$345</text>
+                <text class="loss-label" x="336" y="182" text-anchor="end">Max loss −$345</text>
+                <text class="marker-label" x="138" y="98" text-anchor="end">BE $758.45</text>
+                <text class="marker-label" x="284" y="98">BE $776.55</text>
+                <text class="marker-label" x="227" y="58" text-anchor="end">Now $770.21</text>
                 <text class="axis-title" x="342" y="217" text-anchor="end">SPY price at expiry</text>
               </svg>
             </div>
           </div>
-          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Tue. Oct. 20, 2026 between 8:49 and 9:01 AM CT; all four legs showed tight two-sided markets (one-cent spreads). Entry figures were from the live Nasdaq Oct. 23 chain on Oct. 16, 2026 at about 1:11 PM ET. The ~66% implied chance of profit is the options market's implied probability of SPY expiring inside the $760–$775 short strikes, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share iron condor and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
+          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Wed. Oct. 21, 2026 at 8:45 AM CT; all four legs showed tight two-sided markets (one-cent spreads). Entry figures were from the live Nasdaq Oct. 23 chain on Oct. 16, 2026 at about 1:11 PM ET. The ~67% implied chance of profit is the options market's implied probability of SPY expiring inside the $760–$775 short strikes, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share iron condor and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
         </article>
           <div class="play-slot" data-play-slot="2" aria-hidden="true"></div>
-          <article class="bot-weekly-verdict slot-bot-play orlando-weekly-verdict" data-play-slot="3" aria-labelledby="ibm-orlando-play-title">
+          <article class="bot-weekly-verdict slot-bot-play user-weekly-verdict" data-play-slot="3" aria-labelledby="ibm-user-play-title">
           <div class="bot-pick-head">
             <div>
-              <div class="section-kicker">Slot 3 · Orlando's pick</div>
-              <h3 id="ibm-orlando-play-title">IBM Oct. 23 $210/$215/$245/$250 iron condor</h3>
+              <div class="section-kicker">Slot 3 · User's pick</div>
+              <h3 id="ibm-user-play-title">IBM Oct. 23 $210/$215/$245/$250 iron condor</h3>
               <div class="bot-pick-bias">Defined-risk earnings range trade</div>
             </div>
-            <div class="bot-pick-quote">IBM $240.32 at re-price<br>Expected move ±7.4% · ATM straddle ~$17.10<br>Oct 23 expiry · DTE 3</div>
+            <div class="bot-pick-quote">IBM $244.42 at re-price<br>Expected move ±7.4% · ATM straddle ~$17.10<br>Oct 23 expiry · DTE 2</div>
           </div>
           <div class="bot-pick-layout">
             <div class="bot-pick-details">
@@ -928,28 +930,28 @@
                 <div class="bot-pick-leg"><span>Buy Oct 23 $250 call</span><b>Long call</b></div>
               </div>
               <div class="bot-pick-stats">
-                <div class="bot-pick-stat"><span>Net credit / max profit</span><strong class="profit">$2.195 · $219.50</strong></div>
-                <div class="bot-pick-stat"><span>Max loss</span><strong class="loss">$2.805 · $280.50</strong></div>
-                <div class="bot-pick-stat"><span>Lower breakeven</span><strong>$212.81</strong></div>
-                <div class="bot-pick-stat"><span>Upper breakeven</span><strong>$247.20</strong></div>
+                <div class="bot-pick-stat"><span>Net credit / max profit</span><strong class="profit">$2.255 · $225.50</strong></div>
+                <div class="bot-pick-stat"><span>Max loss</span><strong class="loss">$2.745 · $274.50</strong></div>
+                <div class="bot-pick-stat"><span>Lower breakeven</span><strong>$212.75</strong></div>
+                <div class="bot-pick-stat"><span>Upper breakeven</span><strong>$247.26</strong></div>
               </div>
               <div class="comparison-row">
-                <p class="price-comparison"><strong>vs yesterday (Mon Oct 19):</strong> stock +2.4% · credit +6.6% · max loss −4.6% · breakevens $212.94/$247.06 → $212.81/$247.20</p>
-                <p class="better-day-note">Better day to make this pick: today — the credit rose 6.6% since yesterday ($206 → $219.50), so today is the better day to sell this condor.</p>
-                <p class="probability-note">Implied chance of profit: ~59% (from option prices)</p>
+                <p class="price-comparison"><strong>vs yesterday (Tue Oct 20):</strong> stock +1.7% · credit +2.7% · max loss −2.1% · breakevens $212.81/$247.20 → $212.75/$247.26 · hit chance 59% → 51%</p>
+                <p class="better-day-note">Better day to make this pick: today — the credit rose 2.7% since yesterday ($219.50 → $225.50), so today is the better day to sell this condor.</p>
+                <p class="probability-note">Implied chance of profit: ~51% (from option prices)</p>
               </div>
             </div>
             <div class="bot-pick-copy-wrap">
               <p class="bot-pick-copy"><strong>Earnings:</strong> Wednesday, Oct. 21 after the close; call at 5:00 PM ET. Consensus is EPS of $2.86 on revenue of $16.82B. The Oct. 23 at-the-money straddle is about $17.10, implying a ±7.4% move.</p>
               <p class="bot-pick-copy bot-pick-counter"><strong>Context:</strong> BofA expects a modest beat (Buy, $280 target); UBS stays Neutral ($236) and flagged delayed contracts recapturing less than 50% of slipped Q2 deals—the report is a test of whether that demand converts.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Position:</strong> a bet that IBM stays between $212.81 and $247.20 through the Oct. 23 expiry—profit if the earnings reaction lands within the market's expected ±7.4% move.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Defined risk:</strong> maximum loss is capped at $280.50 per contract no matter how far IBM moves past the wings. Maximum profit is the $219.50 credit.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Position:</strong> a bet that IBM stays between $212.75 and $247.26 through the Oct. 23 expiry—profit if the earnings reaction lands within the market's expected ±7.4% move.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Defined risk:</strong> maximum loss is capped at $274.50 per contract no matter how far IBM moves past the wings. Maximum profit is the $225.50 credit.</p>
             </div>
             <div class="bot-pick-payoff broker-payoff">
               <div class="bot-pick-payoff-head"><span>Profit / loss at expiry</span><span>1 condor · USD</span></div>
               <svg class="payoff" viewBox="0 0 360 220" role="img" aria-labelledby="ibm-payoff-title ibm-payoff-desc">
                 <title id="ibm-payoff-title">IBM iron condor profit and loss at expiry</title>
-                <desc id="ibm-payoff-desc">At or below 210 dollars and at or above 250 dollars, maximum loss is 280 dollars and 50 cents. Profit rises between 210 and 215 dollars, stays at the maximum 219 dollars and 50 cents from 215 through 245 dollars, then falls between 245 and 250 dollars. Breakevens are 212 dollars and 81 cents and 247 dollars and 20 cents. A dashed line marks the current 240 dollar and 32 cent share price.</desc>
+                <desc id="ibm-payoff-desc">At or below 210 dollars and at or above 250 dollars, maximum loss is 274 dollars and 50 cents. Profit rises between 210 and 215 dollars, stays at the maximum 225 dollars and 50 cents from 215 through 245 dollars, then falls between 245 and 250 dollars. Breakevens are 212 dollars and 75 cents and 247 dollars and 26 cents. A dashed line marks the current 244 dollar and 42 cent share price.</desc>
                 <rect class="plot-bg" x="42" y="20" width="300" height="170"></rect>
                 <g aria-hidden="true">
                   <line class="grid-line" x1="42" y1="20" x2="342" y2="20"></line>
@@ -959,36 +961,36 @@
                   <line class="grid-line" x1="117" y1="20" x2="117" y2="190"></line>
                   <line class="grid-line" x1="267" y1="20" x2="267" y2="190"></line>
                   <line class="grid-line" x1="292" y1="20" x2="292" y2="190"></line>
-                  <polygon class="loss-fill" points="42,105 42,173.12 92,173.12 106.05,105"></polygon>
-                  <polygon class="profit-fill" points="106.05,105 117,30.37 267,30.37 278,105"></polygon>
-                  <polygon class="loss-fill" points="278,105 292,173.12 342,173.12 342,105"></polygon>
+                  <polygon class="loss-fill" points="42,105 42,171.66 92,171.66 105.75,105"></polygon>
+                  <polygon class="profit-fill" points="105.75,105 117,28.33 267,28.33 278.3,105"></polygon>
+                  <polygon class="loss-fill" points="278.3,105 292,171.66 342,171.66 342,105"></polygon>
                   <line class="axis-line" x1="42" y1="20" x2="42" y2="190"></line>
                   <line class="axis-line" x1="42" y1="190" x2="342" y2="190"></line>
                   <line class="zero" x1="42" y1="105" x2="342" y2="105"></line>
-                  <line class="current" x1="243.6" y1="20" x2="243.6" y2="190"></line>
-                  <line class="loss-line" x1="42" y1="173.12" x2="92" y2="173.12"></line>
-                  <line class="slope-line" x1="92" y1="173.12" x2="117" y2="30.37"></line>
-                  <line class="gain-line" x1="117" y1="30.37" x2="267" y2="30.37"></line>
-                  <line class="slope-line" x1="267" y1="30.37" x2="292" y2="173.12"></line>
-                  <line class="loss-line" x1="292" y1="173.12" x2="342" y2="173.12"></line>
-                  <circle class="breakeven-dot" cx="106.05" cy="105" r="4"></circle>
-                  <circle class="breakeven-dot" cx="278" cy="105" r="4"></circle>
+                  <line class="current" x1="264.1" y1="20" x2="264.1" y2="190"></line>
+                  <line class="loss-line" x1="42" y1="171.66" x2="92" y2="171.66"></line>
+                  <line class="slope-line" x1="92" y1="171.66" x2="117" y2="28.33"></line>
+                  <line class="gain-line" x1="117" y1="28.33" x2="267" y2="28.33"></line>
+                  <line class="slope-line" x1="267" y1="28.33" x2="292" y2="171.66"></line>
+                  <line class="loss-line" x1="292" y1="171.66" x2="342" y2="171.66"></line>
+                  <circle class="breakeven-dot" cx="105.75" cy="105" r="4"></circle>
+                  <circle class="breakeven-dot" cx="278.3" cy="105" r="4"></circle>
                 </g>
                 <g class="tick-label" aria-hidden="true">
                   <text x="36" y="23" text-anchor="end">+$250</text><text x="36" y="108.5" text-anchor="end">$0</text><text x="36" y="193" text-anchor="end">−$350</text>
                   <text x="42" y="204" text-anchor="middle">$200</text><text x="92" y="204" text-anchor="middle">$210</text><text x="117" y="204" text-anchor="middle">$215</text><text x="267" y="204" text-anchor="middle">$245</text><text x="292" y="204" text-anchor="middle">$250</text><text x="342" y="204" text-anchor="middle">$260</text>
                 </g>
-                <text class="profit-label" x="192" y="25" text-anchor="middle">Max profit +$219.50</text>
-                <text class="loss-label" x="48" y="167">Max loss −$280.50</text>
-                <text class="loss-label" x="336" y="167" text-anchor="end">Max loss −$280.50</text>
-                <text class="marker-label" x="102" y="98" text-anchor="end">BE $212.81</text>
-                <text class="marker-label" x="282" y="98">BE $247.20</text>
-                <text class="marker-label" x="239" y="58" text-anchor="end">Now $240.32</text>
+                <text class="profit-label" x="192" y="23" text-anchor="middle">Max profit +$225.50</text>
+                <text class="loss-label" x="48" y="166">Max loss −$274.50</text>
+                <text class="loss-label" x="336" y="166" text-anchor="end">Max loss −$274.50</text>
+                <text class="marker-label" x="102" y="98" text-anchor="end">BE $212.75</text>
+                <text class="marker-label" x="282" y="98">BE $247.26</text>
+                <text class="marker-label" x="260" y="58" text-anchor="end">Now $244.42</text>
                 <text class="axis-title" x="342" y="217" text-anchor="end">IBM price at expiry</text>
               </svg>
             </div>
           </div>
-          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Tue. Oct. 20, 2026 between 8:49 and 9:01 AM CT; all four legs showed two-sided markets (32–90 cent spreads). Entry figures were from the live Nasdaq Oct. 23 chain on Oct. 16, 2026 at about 12:15 PM ET. The ~59% implied chance of profit is the options market's implied probability of IBM expiring inside the $215–$245 short strikes, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share iron condor and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
+          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Wed. Oct. 21, 2026 at 8:57 AM CT; all four legs showed two-sided markets (16–75 cent spreads). Entry figures were from the live Nasdaq Oct. 23 chain on Oct. 16, 2026 at about 12:15 PM ET. The ~51% implied chance of profit is the options market's implied probability of IBM expiring inside the $215–$245 short strikes, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share iron condor and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
         </article>
           <article class="bot-weekly-verdict slot-bot-play" data-play-slot="4" aria-labelledby="nflx-run-up-play-title">
           <div class="bot-pick-head">
@@ -997,68 +999,68 @@
               <h3 id="nflx-run-up-play-title">NFLX Oct. 23 $70/$75 bull call spread</h3>
               <div class="bot-pick-bias">Bot's earnings play for next week · contrarian bounce</div>
             </div>
-            <div class="bot-pick-quote">NFLX $70.29 at re-price · near its 52-week low<br>52-week range $65.08–$124.86<br>Oct 23 expiry · DTE 3</div>
+            <div class="bot-pick-quote">NFLX $65.99 at re-price · near its 52-week low<br>52-week range $65.08–$124.86<br>Oct 23 expiry · DTE 2</div>
           </div>
           <div class="bot-pick-layout">
             <div class="bot-pick-details">
               <div class="bot-pick-legs" aria-label="NFLX bull call spread option legs">
-                <div class="bot-pick-leg"><span>Buy Oct 23 $70 call</span><b>$3.35 mid</b></div>
-                <div class="bot-pick-leg"><span>Sell Oct 23 $75 call</span><b>$1.505 mid</b></div>
+                <div class="bot-pick-leg"><span>Buy Oct 23 $70 call</span><b>$0.115 mid</b></div>
+                <div class="bot-pick-leg"><span>Sell Oct 23 $75 call</span><b>$0.025 mid</b></div>
               </div>
               <div class="bot-pick-stats">
-                <div class="bot-pick-stat"><span>Entry debit</span><strong class="loss">$184.50</strong></div>
-                <div class="bot-pick-stat"><span>Max profit</span><strong class="profit">$315.50</strong></div>
-                <div class="bot-pick-stat"><span>Breakeven</span><strong>$71.85</strong></div>
+                <div class="bot-pick-stat"><span>Entry debit</span><strong class="loss">$9.00</strong></div>
+                <div class="bot-pick-stat"><span>Max profit</span><strong class="profit">$491.00</strong></div>
+                <div class="bot-pick-stat"><span>Breakeven</span><strong>$70.09</strong></div>
                 <div class="bot-pick-stat"><span>Expected move</span><strong>±9% · ±$6.35</strong></div>
               </div>
               <div class="comparison-row">
-                <p class="price-comparison"><strong>vs yesterday (Mon Oct 19):</strong> stock +0.9% · debit +3.4% · max profit −1.9% · breakeven $71.79 → $71.85</p>
-                <p class="better-day-note">Better day to make this pick: yesterday — the debit rose 3.4% since yesterday ($178.50 → $184.50), so yesterday was the better day to buy this spread.</p>
-                <p class="probability-note">Implied chance of profit: ~40% (from option prices)</p>
+                <p class="price-comparison"><strong>vs yesterday (Tue Oct 20):</strong> stock −6.1% · debit −95.1% · max profit +55.6% · breakeven $71.85 → $70.09 · hit chance 40% → ~8%</p>
+                <p class="better-day-note">Better day to make this pick: today — the debit collapsed 95.1% since yesterday ($184.50 → $9.00), so today is the cheaper day to buy this spread — though the play is nearly dead, with the stock down ~6% to ~$66 and both calls near-worthless.</p>
+                <p class="probability-note">Implied chance of profit: ~8% (from option prices)</p>
               </div>
             </div>
             <div class="bot-pick-copy-wrap">
-              <p class="bot-pick-copy"><strong>Earnings:</strong> Tuesday, Oct. 20 after the close. Analysts expect EPS of $0.82 (+39%) on revenue of $12.87B (+12%). The Oct. 23 at-the-money straddle implies a ±9% move, or about ±$6.35; quoted IV is 80.9%.</p>
+              <p class="bot-pick-copy"><strong>Earnings:</strong> reported Tuesday, Oct. 20 after the close. EPS of $0.87 beat the $0.82 estimate and revenue of $12.87B was in line, but Q4 revenue guidance of $13.44B missed the $13.51B consensus and the 2026 ad-revenue forecast was cut to ~$2.7B from $3B. The stock fell ~6% on the report; quoted IV is now 58.1%.</p>
               <p class="bot-pick-copy bot-pick-counter"><strong>Thesis:</strong> Contrarian bounce — the stock is down 41% in a year and analysts are cutting targets into the print, but the free-cash-flow story remains intact at an expected $12.5B. A solid FCF print could spark short covering and a sharp move.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Position:</strong> bullish call spread, buying the Oct. 23 $70 call and selling the $75 call for a $184.50 net debit.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Defined risk:</strong> the maximum loss is the $184.50 debit if NFLX closes at or below $70 on Oct. 23. Maximum profit is $315.50 at or above $75; the breakeven is $71.85.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Position:</strong> bullish call spread, buying the Oct. 23 $70 call and selling the $75 call for a $9.00 net debit.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Defined risk:</strong> the maximum loss is the $9.00 debit if NFLX closes at or below $70 on Oct. 23. Maximum profit is $491.00 at or above $75; the breakeven is $70.09.</p>
             </div>
             <div class="bot-pick-payoff broker-payoff">
               <div class="bot-pick-payoff-head"><span>Profit / loss at expiry</span><span>1 spread · USD</span></div>
               <svg class="payoff" viewBox="0 0 360 220" role="img" aria-labelledby="nflx-payoff-title nflx-payoff-desc">
                 <title id="nflx-payoff-title">NFLX bull call spread profit and loss at expiry</title>
-                <desc id="nflx-payoff-desc">At or below 70 dollars, maximum loss is 184 dollars and 50 cents. Profit rises between 70 and 75 dollars, crossing zero at the 71 dollar and 85 cent breakeven. At or above 75 dollars, maximum profit is 315 dollars and 50 cents. A dashed line marks the current 70 dollar and 29 cent share price.</desc>
+                <desc id="nflx-payoff-desc">At or below 70 dollars, maximum loss is 9 dollars. Profit rises between 70 and 75 dollars, crossing zero at the 70 dollar and 9 cent breakeven. At or above 75 dollars, maximum profit is 491 dollars. A dashed line marks the current 65 dollar and 99 cent share price.</desc>
                 <rect class="plot-bg" x="42" y="20" width="300" height="170"></rect>
                 <g aria-hidden="true">
                   <line class="grid-line" x1="42" y1="20" x2="342" y2="20"></line>
-                  <line class="grid-line" x1="42" y1="119.17" x2="342" y2="119.17"></line>
+                  <line class="grid-line" x1="42" y1="175.83" x2="342" y2="175.83"></line>
                   <line class="grid-line" x1="42" y1="190" x2="342" y2="190"></line>
                   <line class="grid-line" x1="142" y1="20" x2="142" y2="190"></line>
                   <line class="grid-line" x1="242" y1="20" x2="242" y2="190"></line>
-                  <polygon class="loss-fill" points="42,119.17 42,171.45 142,171.45 179,119.17"></polygon>
-                  <polygon class="profit-fill" points="179,119.17 242,29.78 342,29.78 342,119.17"></polygon>
+                  <polygon class="loss-fill" points="42,175.83 42,178.38 142,178.38 143.8,175.83"></polygon>
+                  <polygon class="profit-fill" points="143.8,175.83 242,36.71 342,36.71 342,175.83"></polygon>
                   <line class="axis-line" x1="42" y1="20" x2="42" y2="190"></line>
                   <line class="axis-line" x1="42" y1="190" x2="342" y2="190"></line>
-                  <line class="zero" x1="42" y1="119.17" x2="342" y2="119.17"></line>
-                  <line class="current" x1="147.8" y1="20" x2="147.8" y2="190"></line>
-                  <line class="loss-line" x1="42" y1="171.45" x2="142" y2="171.45"></line>
-                  <line class="slope-line" x1="142" y1="171.45" x2="242" y2="29.78"></line>
-                  <line class="gain-line" x1="242" y1="29.78" x2="342" y2="29.78"></line>
-                  <circle class="breakeven-dot" cx="179" cy="119.17" r="4"></circle>
+                  <line class="zero" x1="42" y1="175.83" x2="342" y2="175.83"></line>
+                  <line class="current" x1="61.8" y1="20" x2="61.8" y2="190"></line>
+                  <line class="loss-line" x1="42" y1="178.38" x2="142" y2="178.38"></line>
+                  <line class="slope-line" x1="142" y1="178.38" x2="242" y2="36.71"></line>
+                  <line class="gain-line" x1="242" y1="36.71" x2="342" y2="36.71"></line>
+                  <circle class="breakeven-dot" cx="143.8" cy="175.83" r="4"></circle>
                 </g>
                 <g class="tick-label" aria-hidden="true">
-                  <text x="36" y="23" text-anchor="end">+$350</text><text x="36" y="122.5" text-anchor="end">$0</text><text x="36" y="193" text-anchor="end">−$250</text>
+                  <text x="36" y="23" text-anchor="end">+$550</text><text x="36" y="179" text-anchor="end">$0</text><text x="36" y="193" text-anchor="end">−$50</text>
                   <text x="42" y="204" text-anchor="middle">$65</text><text x="142" y="204" text-anchor="middle">$70</text><text x="242" y="204" text-anchor="middle">$75</text><text x="342" y="204" text-anchor="middle">$80</text>
                 </g>
-                <text class="profit-label" x="285" y="31" text-anchor="middle">Max profit +$315.50</text>
-                <text class="loss-label" x="48" y="171">Max loss −$184.50</text>
-                <text class="marker-label" x="185" y="112">Breakeven $71.85</text>
-                <text class="marker-label" x="143" y="31" text-anchor="end">Now $70.29</text>
+                <text class="profit-label" x="292" y="38" text-anchor="middle">Max profit +$491</text>
+                <text class="loss-label" x="48" y="186">Max loss −$9</text>
+                <text class="marker-label" x="150" y="188">Breakeven $70.09</text>
+                <text class="marker-label" x="66" y="31">Now $65.99</text>
                 <text class="axis-title" x="342" y="217" text-anchor="end">NFLX price at expiry</text>
               </svg>
             </div>
           </div>
-          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Tue. Oct. 20, 2026 between 8:49 and 9:01 AM CT; both legs showed tight two-sided markets (5–10 cent spreads). Entry figures were from Nasdaq on Oct. 16, 2026 at about 1:01 PM ET. The ~40% implied chance of profit is the options market's implied probability of NFLX expiring above the $71.85 breakeven, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share contract spread and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
+          <p class="bot-pick-risk">Re-priced from the Nasdaq API on Wed. Oct. 21, 2026 at 8:45 AM CT; both legs showed tight two-sided markets (1–3 cent spreads: $70 call $0.10/$0.13, $75 call $0.02/$0.03). Entry figures were from Nasdaq on Oct. 16, 2026 at about 1:01 PM ET. The ~8% implied chance of profit is the options market's implied probability of NFLX expiring above the $70.09 breakeven, backed out of the actual bid/ask quotes — not a personal forecast. Figures assume one 100-share contract spread and expiration values. For informational purposes only, not financial advice. Options involve risk.</p>
         </article>
         </div>
         <p class="earnings-disclaimer">Expected moves are options-implied estimates, not predictions — actual moves can differ. Bot's Call and Best Play are for informational purposes only, not financial advice. Options involve risk.</p>
@@ -1094,7 +1096,7 @@
             </div>
           </div>
           <div class="pick-record-column">
-            <h3>Orlando</h3>
+            <h3>User</h3>
             <p class="pick-record-score">2 wins · 1 loss</p>
             <div class="pick-record-week">Settled</div>
             <div class="pick-record-entry">
@@ -1136,7 +1138,7 @@
     <section class="section" aria-labelledby="watch-title">
       <div class="section-title"><div><div class="section-kicker">Catalyst list</div><h2 id="watch-title">Watch next</h2></div></div>
       <ol class="watch-list">
-        <li><span class="catalyst-check" aria-hidden="true"></span><span class="n">01</span><span class="catalyst-body"><span class="catalyst-title">Earnings today: before open &#8212; AT&amp;T, Philip Morris, Thermo Fisher, Abbott, Danaher, NextEra Energy, CME, Moody&#8217;s; after close &#8212; Meta, Tesla, IBM, Lam Research, Texas Instruments <a href="https://quant500.com/earnings-this-week" target="_blank" rel="noreferrer">(Quant500)</a></span></span></li>
+        <li><span class="catalyst-check done" aria-hidden="true"></span><span class="n">01</span><span class="catalyst-body"><span class="catalyst-title">Earnings today: before open &#8212; AT&amp;T, Philip Morris, Thermo Fisher, Abbott, Danaher, NextEra Energy, CME, Moody&#8217;s; after close &#8212; Meta, Tesla, IBM, Lam Research, Texas Instruments <a href="https://quant500.com/earnings-this-week" target="_blank" rel="noreferrer">(Quant500)</a></span><span class="catalyst-result"><strong>AT&amp;T Q3 reported:</strong> Beat-and-raise &#8212; revenue $32.3B vs $31.69B est, adj EPS $0.65 vs $0.60 est, 2026 adj-EPS guide raised to ~$2.40 (from $2.25&#8211;$2.35) and ~$10B of buybacks accelerated &#8212; but shares fell 5%+ premarket on soft postpaid adds. (Barron&#8217;s) After-close reports (Meta, Tesla, IBM, Lam Research, Texas Instruments) still to come.</span></span></li>
         <li><span class="catalyst-check" aria-hidden="true"></span><span class="n">02</span><span class="catalyst-body"><span class="catalyst-title">EIA crude inventories 9:30 AM CT; ECB President Lagarde speaks 12 PM ET; US 20-year bond auction 1 PM ET <a href="https://jack1065.com/2026/10/21/morning-bid-musk-mulls-megacap/" target="_blank" rel="noreferrer">(Reuters Morning Bid)</a></span></span></li>
         <li><span class="catalyst-check" aria-hidden="true"></span><span class="n">03</span><span class="catalyst-body"><span class="catalyst-title">Fed decision next week Oct 27-28 (hold expected), then Dec 9 (hike expected)</span></span></li>
       </ol>
@@ -1326,7 +1328,7 @@
       <div class="scoreboard-card">
         <h2 id="score-title">Scoreboard</h2>
         <p class="scoreboard-line">Bot = 3</p>
-        <p class="scoreboard-line">Orlando = 1</p>
+        <p class="scoreboard-line">User = 1</p>
       </div>
     </section>
 
@@ -1337,26 +1339,26 @@
       <p class="final-score"><span class="final">Final</span> Florida 27, Texas 24</p>
       <div class="bet-picks">
         <div><span>Bot's pick</span><b>Texas</b> <b class="miss">· Miss</b></div>
-        <div><span>Orlando's pick</span><b>Texas</b> <b class="miss">· Miss</b></div>
+        <div><span>User's pick</span><b>Texas</b> <b class="miss">· Miss</b></div>
       </div>
       <div class="market-line">
         <p>Betting market (display only — not a pick): Texas −11.5, O/U 51.5</p>
       </div>
-      <p class="bet-tally">Tally — Bot 3, Orlando 1, 1 tie (Bot took Athletics, Astros, Ravens; Orlando took Astros; the tie is Austin FC 3-3 San Diego)</p>
+      <p class="bet-tally">Tally — Bot 3, User 1, 1 tie (Bot took Athletics, Astros, Ravens; User took Astros; the tie is Austin FC 3-3 San Diego)</p>
     </div>
 
     <section class="section moved-plays" aria-label="Earlier options plays">
       <div class="earnings-section">
-        <aside class="bot-weekly-verdict orlando-weekly-verdict" aria-labelledby="intc-play-title">
+        <aside class="bot-weekly-verdict user-weekly-verdict" aria-labelledby="intc-play-title">
           <div class="bot-pick-head">
             <div>
               <div class="section-kicker">Bull put spread</div>
-              <h3 id="intc-play-title">ORLANDO'S PLAY · INTC Oct. 30 $89/$86 bull put spread</h3>
+              <h3 id="intc-play-title">USER'S PLAY · INTC Oct. 30 $89/$86 bull put spread</h3>
               <div class="bot-pick-bias">Bullish-to-neutral premium collection · close before earnings</div>
             </div>
             <div class="bot-pick-quote">Entry credit $0.48 ($48) · opened Oct 12<br><strong>INTC current price $101.05</strong></div>
           </div>
-          <div class="orlando-pick-layout">
+          <div class="user-pick-layout">
             <div>
               <div class="bot-pick-legs" aria-label="INTC bull put spread option legs">
                 <div class="bot-pick-leg"><span>Sell Oct 30 $89 put</span><b>Short put</b></div>
@@ -1373,10 +1375,10 @@
               </div>
             </div>
             <div>
-              <p class="orlando-pick-fact"><strong>Timing:</strong> Oct 30 expiry, but close before INTC reports Thursday, Oct 29 after the close to avoid carrying the spread through earnings.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Why this setup:</strong> the spread collects premium to pay down margin while aligning with the existing 100-share long INTC position, rather than fighting the shares with an iron condor's call side.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Position:</strong> bullish-to-neutral premium collection, with INTC at $101.05—13.5% above the $89 short strike—and an $88.52 breakeven.</p>
-              <p class="orlando-pick-fact bot-pick-counter"><strong>Defined risk:</strong> the $3-wide spread has $300 of gross risk per contract; the $48 entry credit leaves a maximum loss of $252 below $86. Maximum profit is $48 at or above $89.</p>
+              <p class="user-pick-fact"><strong>Timing:</strong> Oct 30 expiry, but close before INTC reports Thursday, Oct 29 after the close to avoid carrying the spread through earnings.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Why this setup:</strong> the spread collects premium to pay down margin while aligning with the existing 100-share long INTC position, rather than fighting the shares with an iron condor's call side.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Position:</strong> bullish-to-neutral premium collection, with INTC at $101.05—13.5% above the $89 short strike—and an $88.52 breakeven.</p>
+              <p class="user-pick-fact bot-pick-counter"><strong>Defined risk:</strong> the $3-wide spread has $300 of gross risk per contract; the $48 entry credit leaves a maximum loss of $252 below $86. Maximum profit is $48 at or above $89.</p>
             </div>
           </div>
           <div class="bot-pick-payoff broker-payoff">
@@ -1415,7 +1417,7 @@
               <text class="axis-title" x="342" y="217" text-anchor="end">INTC price at expiry</text>
             </svg>
           </div>
-          <p class="bot-pick-risk">Position terms and actual $48 fill supplied by Orlando. Verify the Oct 30 $89/$86 spread against live quotes before trading. The ~93% chance is market-implied, not a personal forecast. Figures assume one 100-share contract spread. For informational tracking only, not financial advice. Options involve risk.</p>
+          <p class="bot-pick-risk">Position terms and actual $48 fill supplied by User. Verify the Oct 30 $89/$86 spread against live quotes before trading. The ~93% chance is market-implied, not a personal forecast. Figures assume one 100-share contract spread. For informational tracking only, not financial advice. Options involve risk.</p>
         </aside>
       </div>
     </section>
